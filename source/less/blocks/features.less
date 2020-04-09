@@ -1,4 +1,4 @@
-// main: style.less;
+@import "../mixins";
 
 .feature__icon {
   fill: @blue;
@@ -6,4 +6,12 @@
 
 .features {
   list-style-type: none;
+}
+
+.feature__title {
+  .common-text;
+}
+
+.feature__text p {
+  .normal-text;
 }

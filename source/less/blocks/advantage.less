@@ -1,4 +1,4 @@
-// main: style.less;
+@import "../mixins";
 
 .advantage__inner--bluebg {
   background-color: @blue;
@@ -6,4 +6,16 @@
 
 .advantage__inner--greybg {
   background-color: @grey;
+}
+
+.advantage__header {
+  .common-text;
+}
+
+.advantage__text--white {
+  color: @white;
+}
+
+.advantage__number, .advantage__description {
+  .normal-text;
 }

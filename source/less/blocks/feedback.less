@@ -1,17 +1,26 @@
-// main: style.less;
+@import "../mixins";
 
 .feedback input {
   background-color: @input-color;
   border: none;
 }
 
-.textbox input {
-  padding-top: 17px;
-  padding-right: 21px;
+.textbox input, .textbox__input--feedback-description {
   font-weight: bold;
+
+  &::placeholder {
+    color: @black;
+  }
 }
 
 .textbox__title {
-  text-transform: uppercase;
-  font-size: 14px;
+  .normal-text;
+}
+
+.feedback__section-title {
+  .common-text;
+}
+
+.feedback__section {
+  border: none;
 }
