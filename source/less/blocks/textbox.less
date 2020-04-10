@@ -1,0 +1,31 @@
+.textbox__title {
+  display: block;
+  padding-right: 20px;
+  line-height: 58px;
+  user-select: none;
+  .normal-text();
+  color: #333;
+}
+
+.textbox input,
+.textbox__input--feedback-description {
+  height: 58px;
+  margin: 0;
+  padding: 0 20px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  background-color: @input-color;
+  border: none;
+  outline: none;
+
+  &::placeholder {
+    color: @black;
+  }
+}
+
+.textbox__input--feedback-description {
+  width: 100%;
+  min-height: 160px;
+  padding-top: 10px;
+}
