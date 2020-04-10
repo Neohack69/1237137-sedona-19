@@ -1,26 +1,13 @@
-@import "../mixins";
-
 .feedback input {
   background-color: @input-color;
   border: none;
 }
 
-.textbox input, .textbox__input--feedback-description {
-  font-weight: bold;
-
-  &::placeholder {
-    color: @black;
-  }
-}
-
-.textbox__title {
-  .normal-text;
-}
-
 .feedback__section-title {
-  .common-text;
+  .common-text();
 }
 
 .feedback__section {
   border: none;
 }
+
