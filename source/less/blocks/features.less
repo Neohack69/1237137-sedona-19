@@ -4,12 +4,27 @@
 
 .features {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background-color: @white;
 }
 
 .feature__title {
   .common-text();
+  line-height: 37px;
 }
 
 .feature__text p {
   .normal-text();
+}
+
+.feature__text {
+  padding-left: 20px;
+}
+
+.feature__item {
+  display: flex;
+  padding: 20px 5%;
+  line-height: 21px;
+  text-align: left;
 }

@@ -1,13 +1,23 @@
 .social-list__item {
-  fill: @white;
-  background-color: @blue;
-  width: 46px;
-  height: 48px;
+  margin-right: 6px;
+  margin-bottom: 6px;
   text-align: center;
-  padding-top: 17px;
-  display: inline-block;
+}
+
+.social-list__item a {
+  display: block;
+  width: 48px;
+  height: 48px;
+  padding-top: 16px;
+  background-color: @blue;
+  fill: white;
 }
 
 .social-list {
-  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }

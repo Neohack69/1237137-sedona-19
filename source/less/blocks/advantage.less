@@ -7,7 +7,8 @@
 }
 
 .advantage__header {
-  .common-text;
+  .common-text();
+  text-align: center;
 }
 
 .advantage__text--white {
@@ -17,4 +18,47 @@
 .advantage__number,
 .advantage__description {
   .normal-text();
+  text-align: center;
+}
+
+.advantage {
+  background-color: @blue;
+}
+
+.advantage, .advantages {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.advantage:first-child {
+  padding-top: 36px;
+  background-image: url("@{img}bg-triangle.svg");
+  background-repeat: no-repeat;
+  background-position: 50% top;
+}
+
+.advantage__text {
+  padding: 40px 20px;
+  line-height: 21px;
+}
+
+.advantage--line {
+  position: relative;
+  color: #333;
+  background-color: #ededed;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: @input-iconcolor;
+  }
 }

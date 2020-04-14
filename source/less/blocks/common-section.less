@@ -6,4 +6,33 @@
 .common-section__text,
 .common-section p {
   .normal-text();
+  line-height: 25px;
+  padding: 0;
+  margin: 0;
+}
+
+.common-section__title {
+  margin-bottom: 25px;
+  line-height: 25px;
+}
+
+.common-section {
+  padding: 40px 6%;
+  text-align: center;
+}
+
+.common-section--divided {
+  position: relative;
+  padding-bottom: 15px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: @input-iconcolor;
+  }
 }

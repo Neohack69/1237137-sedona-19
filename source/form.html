@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
   <title>HTML Academy: Седона</title>
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
@@ -9,7 +10,7 @@
 <body>
 <header class="site-header">
   <nav class="site-nav">
-    <button class="site-nav__button">Меню</button>
+    <button class="site-nav__button"></button>
     <ul class="site-nav__list">
       <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
       <li class="site-nav__item"><a class="site-nav__link" href="photo.html">Фото и видео</a></li>
@@ -25,11 +26,12 @@
   </section>
 </header>
 <main class="site-main">
-  <section class="common-section">
+  <section class="common-section common-section--divided">
     <div class="common-section__title">
       <h1 class="common-section__header">Оставьте свой отзыв</h1>
     </div>
-    <p class="common-section__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопремичательностях.</p>
+    <p class="common-section__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами
+      достопремичательностях.</p>
   </section>
   <form action="https://echo.htmlacademy.ru" method="post" class="feedback">
     <fieldset class="feedback__section">
@@ -53,17 +55,19 @@
       <legend class="feedback__section-title">
         Контактная информация:
       </legend>
-      <div class="feedback__section-body">
-        <div class="textbox">
+      <div class="feedback__section-body feedback__section-contacts">
+        <div class="textbox textbox--feedback-contacts">
           <label for="phone" class="textbox__title">Контактный телефон</label>
-          <input class="textbox__input textbox__input--phone" type="tel" name="phone" id="phone" placeholder="Введите телефон" pattern="[0-9]{1}-[0-9]{3}-[0-9]{7}">
+          <input class="textbox__input textbox__input--phone" type="tel" name="phone" id="phone"
+                 placeholder="Введите телефон" pattern="[0-9]{1}-[0-9]{3}-[0-9]{7}">
           <span class="textbox__warning textbox__warning--phone">
             Ошибка, перепроверьте номер
           </span>
         </div>
-        <div class="textbox">
+        <div class="textbox textbox--feedback-contacts">
           <label for="email" class="textbox__title">Электронная почта:</label>
-          <input class="textbox__input textbox__input--email" type="email" name="email" id="email" placeholder="Введите e-mail" pattern="[a-zA-Z]{2,}@[a-zA-Z]{2,}.[a-zA-Z]{2,}">
+          <input class="textbox__input textbox__input--email" type="email" name="email" id="email"
+                 placeholder="Введите e-mail" pattern="[a-zA-Z]{2,}@[a-zA-Z]{2,}.[a-zA-Z]{2,}">
           <span class="textbox__warning textbox__warning--email">
             Ошибка, перепроверьте адрес
           </span>

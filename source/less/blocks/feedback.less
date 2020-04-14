@@ -5,9 +5,51 @@
 
 .feedback__section-title {
   .common-text();
+  display: block;
+  margin: 0 auto;
+  padding: 20px 0;
+  line-height: 25px;
+  text-align: center;
 }
 
 .feedback__section {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
   border: none;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: @grey-crossline;
+  }
 }
 
+.feedback {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 20px;
+  padding: 0;
+}
+
+.feedback__section-contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.textbox--feedback-contacts {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 45px;
+}
