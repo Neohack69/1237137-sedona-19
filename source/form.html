@@ -60,7 +60,7 @@
           <label for="phone" class="textbox__title">Контактный телефон</label>
           <input class="textbox__input textbox__input--phone" type="tel" name="phone" id="phone"
                  placeholder="Введите телефон" pattern="[0-9]{1}-[0-9]{3}-[0-9]{7}">
-          <span class="textbox__warning textbox__warning--phone">
+          <span class="textbox__warning textbox__warning--phone visuallyHidden">
             Ошибка, перепроверьте номер
           </span>
         </div>
@@ -68,7 +68,7 @@
           <label for="email" class="textbox__title">Электронная почта:</label>
           <input class="textbox__input textbox__input--email" type="email" name="email" id="email"
                  placeholder="Введите e-mail" pattern="[a-zA-Z]{2,}@[a-zA-Z]{2,}.[a-zA-Z]{2,}">
-          <span class="textbox__warning textbox__warning--email">
+          <span class="textbox__warning textbox__warning--email visuallyHidden">
             Ошибка, перепроверьте адрес
           </span>
         </div>
@@ -80,19 +80,19 @@
       </legend>
       <div class="toggle-set toggle-set--feedback">
         <div class="toggle-set__item">
-          <input class="toggle-set__input" type="radio" name="rating" id="value1" checked="">
+          <input checked="" class="toggle-set__input visuallyHidden" id="value1" name="rating" type="radio">
           <label class="toggle-set__title" for="value1">
             Скорее положительное
           </label>
         </div>
         <div class="toggle-set__item">
-          <input class="toggle-set__input" type="radio" name="rating" id="value2">
+          <input class="toggle-set__input visuallyHidden" id="value2" name="rating" type="radio">
           <label class="toggle-set__title" for="value2">
             Скорее отрицательное
           </label>
         </div>
         <div class="toggle-set__item">
-          <input class="toggle-set__input" type="radio" name="rating" id="value3">
+          <input class="toggle-set__input visuallyHidden" id="value3" name="rating" type="radio">
           <label class="toggle-set__title" for="value3">
             Затрудняюсь ответить
           </label>
@@ -105,25 +105,25 @@
       </legend>
       <div class="checkbox-set checkbox-set--feedback">
         <div class="checkbox-set__item">
-          <input class="checkbox-set__input" type="checkbox" name="check1" id="check1" checked="">
+          <input checked="" class="checkbox-set__input visuallyHidden" id="check1" name="check1" type="checkbox">
           <label class="checkbox-set__title" for="check1">
             Мост Дьявола
           </label>
         </div>
         <div class="checkbox-set__item">
-          <input class="checkbox-set__input" type="checkbox" name="check2" id="check2" checked="">
+          <input checked="" class="checkbox-set__input visuallyHidden" id="check2" name="check2" type="checkbox">
           <label class="checkbox-set__title" for="check2">
             Слайд-парк
           </label>
         </div>
         <div class="checkbox-set__item">
-          <input class="checkbox-set__input" type="checkbox" name="check3" id="check3">
+          <input class="checkbox-set__input visuallyHidden" id="check3" name="check3" type="checkbox">
           <label class="checkbox-set__title" for="check3">
             Гора-Колокол
           </label>
         </div>
         <div class="checkbox-set__item">
-          <input class="checkbox-set__input" type="checkbox" name="check4" id="check4" checked="">
+          <input checked="" class="checkbox-set__input visuallyHidden" id="check4" name="check4" type="checkbox">
           <label class="checkbox-set__title" for="check4">
             Красные скалы
           </label>

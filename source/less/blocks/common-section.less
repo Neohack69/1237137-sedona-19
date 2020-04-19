@@ -14,11 +14,23 @@
 .common-section__title {
   margin-bottom: 25px;
   line-height: 25px;
+  @media (min-width: @tablet-width) {
+    &--biggest {
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 25px;
+      color: #000;
+      text-transform: uppercase;
+    }
+  }
 }
 
 .common-section {
   padding: 40px 6%;
   text-align: center;
+  @media (min-width: @tablet-width) {
+    padding: 50px 12%;
+  }
 }
 
 .common-section--divided {
