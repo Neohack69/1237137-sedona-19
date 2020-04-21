@@ -1,5 +1,7 @@
 .feature__icon {
   fill: @blue;
+  min-width: 37px;
+  min-height: 36px;
   @media (min-width: @tablet-width) {
     width: 75px;
     height: 75px;
@@ -18,6 +20,7 @@
   color: #333;
   background-color: #fff;
   @media (min-width: @tablet-width) {
+    .container-tablet();
     flex-direction: row;
   }
 }
@@ -41,12 +44,16 @@
 
 .feature__item {
   display: flex;
-  padding: 20px 5%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 41px;
+  padding-left: 22px;
+  .container-mob();
   line-height: 21px;
   text-align: left;
   @media (min-width: @tablet-width) {
     flex-direction: column;
-    width: 33%;
+    width: 256px;
     min-height: 256px;
     padding: 30px 20px;
     text-align: center;

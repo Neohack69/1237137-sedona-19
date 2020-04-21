@@ -39,18 +39,21 @@
   }
 
   @media (min-width: @tablet-width) {
+    .container-tablet();
     flex-direction: row;
     &:first-child {
+      padding-top: 0;
       background-image: none;
     }
   }
 }
 
 .advantage__text {
-  padding: 40px 20px;
+  padding: 40px 27px;
+  .container-mob();
   line-height: 21px;
   @media (min-width: @tablet-width) {
-    width: auto;
+    width: 256px;
   }
 }
 
@@ -76,11 +79,13 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding-bottom: 20px;
   @media (min-width: @tablet-width) {
     flex-direction: row;
     padding-bottom: 0;
     align-items: flex-start;
+    &:last-child {
+      flex-direction: row-reverse;
+    }
   }
 }
 
@@ -93,6 +98,6 @@
 
 .advantage__brief {
   @media (min-width: @tablet-width) {
-    width: 33%;
+    width: 256px;
   }
 }

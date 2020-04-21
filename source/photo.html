@@ -37,17 +37,24 @@
     <li class="post">
       <figure class="post__content">
         <a href="#" class="post__photo">
-          <img alt="Закат, дорога" src="img/photo-sunset-mobile@1x.jpg">
+          <picture>
+            <source media="(max-width: 767px)" srcset="img/photo-sunset-mobile@1x.jpg">
+            <source media="(max-width: 1279px)" srcset="img/photo-sunset-tablet@1x.jpg">
+            <source media="(min-width: 1280px)" srcset="img/photo-sunset-desktop@1x.jpg">
+            <img height="280" src="img/photo-sunset-desktop@1x.jpg" width="1200">
+          </picture>
         </a>
         <figcaption class="post__text">
-          <p class="post__header">Неродные просторы</p>
-          <p class="post__author">Автор фото: Борис</p>
+          <div class="post__description">
+            <p class="post__title">Неродные просторы</p>
+            <p class="post__author">Автор фото: Борис</p>
+          </div>
+          <div class="post__likes">
+            <button class="like__button"></button>
+            <div class="post__likes-count">1350</div>
+          </div>
         </figcaption>
       </figure>
-      <div class="post__likes">
-        <button class="like__button"></button>
-        <div class="post__likes-count">1350</div>
-      </div>
     </li>
     <li class="post">
       <figure class="post__content">
@@ -55,14 +62,16 @@
           <img alt="Кактус на фоне гор" src="img/photo-cactus-mobile@1x.jpg">
         </a>
         <figcaption class="post__text">
-          <p class="post__header">Местная растительность</p>
-          <p class="post__author">Автор фото: Сергей</p>
+          <div class="post__description">
+            <p class="post__header">Местная растительность</p>
+            <p class="post__author">Автор фото: Сергей</p>
+          </div>
+          <div class="post__likes">
+            <button class="like__button"></button>
+            <div class="post__likes-count">143</div>
+          </div>
         </figcaption>
       </figure>
-      <div class="post__likes">
-        <button class="like__button"></button>
-        <div class="post__likes-count">143</div>
-      </div>
     </li>
     <li class="post">
       <figure class="post__content">
@@ -70,14 +79,16 @@
           <img alt="Дорога в ущелье" src="img/photo-roads-mobile@1x.jpg">
         </a>
         <figcaption class="post__text">
-          <p class="post__header">Дорога на север</p>
-          <p class="post__author">Автор фото: Петр</p>
+          <div class="post__description">
+            <p class="post__header">Дорога на север</p>
+            <p class="post__author">Автор фото: Петр</p>
+          </div>
+          <div class="post__likes">
+            <button class="like__button"></button>
+            <div class="post__likes-count">96</div>
+          </div>
         </figcaption>
       </figure>
-      <div class="post__likes">
-        <button class="like__button"></button>
-        <div class="post__likes-count">96</div>
-      </div>
     </li>
     <li class="post">
       <figure class="post__content">
@@ -85,14 +96,16 @@
           <img alt="Скалы" src="img/photo-bridge-mobile@1x.jpg">
         </a>
         <figcaption class="post__text">
-          <p class="post__header">Мост дьявола</p>
-          <p class="post__author">Автор фото: Антон</p>
+          <div class="post__description">
+            <p class="post__header">Мост дьявола</p>
+            <p class="post__author">Автор фото: Антон</p>
+          </div>
+          <div class="post__likes">
+            <button class="like__button"></button>
+            <div class="post__likes-count">254</div>
+          </div>
         </figcaption>
       </figure>
-      <div class="post__likes">
-        <button class="like__button"></button>
-        <div class="post__likes-count">254</div>
-      </div>
     </li>
   </ul>
   <div class="common-section">
