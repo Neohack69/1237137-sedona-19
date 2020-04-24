@@ -29,6 +29,11 @@
   width: 279px;
   min-height: 160px;
   padding-top: 10px;
+  @media (min-width: @tablet-width) {
+    .container-tablet();
+    width: 100%;
+    resize: none;
+  }
 }
 
 .textbox {

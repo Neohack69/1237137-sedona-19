@@ -14,9 +14,9 @@
     <ul class="site-nav__list">
       <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
       <li class="site-nav__item"><a class="site-nav__link" href="photo.html">Фото и видео</a></li>
-      <li class="site-nav__item"><a class="site-nav__link" href="#">Форма отзыва</a></li>
+      <li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="#">Форма отзыва</a></li>
       <li class="site-nav__item"><a class="site-nav__link" href="#">Html Academy</a></li>
-      <li class="site-nav__item">
+      <li class="site-nav__item site-nav__item-logo">
         <img alt="City of Sedona" class="logo__image" src="img/logo-sedona-mobile.svg">
       </li>
     </ul>
@@ -30,7 +30,8 @@
     <div class="common-section__title">
       <h1 class="common-section__header">Оставьте свой отзыв</h1>
     </div>
-    <p class="common-section__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами
+    <p class="common-section__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а&nbsp;также о посещенных
+      вами
       достопремичательностях.</p>
   </section>
   <form action="https://echo.htmlacademy.ru" method="post" class="feedback">
@@ -65,7 +66,7 @@
           </span>
         </div>
         <div class="textbox textbox--feedback-contacts">
-          <label class="textbox__title" for="email">Электронная почта*:</label>
+          <label class="textbox__title textbox__title--feedback-contacts" for="email">Электронная почта*:</label>
           <input class="textbox__input textbox__input--email" type="email" name="email" id="email"
                  placeholder="Введите e-mail" pattern="[a-zA-Z]{2,}@[a-zA-Z]{2,}.[a-zA-Z]{2,}">
           <span class="textbox__warning textbox__warning--email visuallyHidden">

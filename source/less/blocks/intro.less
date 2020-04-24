@@ -9,10 +9,10 @@
   background-size: auto, auto;
   text-align: center;
   @media (min-width: @tablet-width) {
-    background-image: url("../../img/bg-intro-triangle-desktop.svg"), url("../../img/bg-back-mobile@1x.jpg");
+    background-image: url("../../img/bg-intro-triangle-desktop.svg"), url("../../img/bg-back-tablet@1x.jpg");
     background-size: auto, 1200px 518px;
     min-height: 290px;
-    padding-top: 92px;
+    padding-top: 100px;
     .container-tablet();
   }
 }
@@ -31,4 +31,8 @@
   min-height: 389px;
   padding-top: 90px;
   text-align: center;
+  @media (min-width: @tablet-width) {
+    min-height: 518px;
+    padding-top: 78px;
+  }
 }

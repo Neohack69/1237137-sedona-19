@@ -13,6 +13,17 @@
   outline: none;
   cursor: pointer;
   @media (min-width: @tablet-width) {
+    display: flex;
     width: 50%;
+    margin: 30px 0;
+    align-items: flex-start;
+    &::after {
+      content: "* - обязательные поля";
+      position: absolute;
+      right: 0;
+      color: #333333;
+      font-size: 14px;
+      font-weight: normal;
+    }
   }
 }
