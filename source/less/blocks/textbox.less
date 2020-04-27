@@ -4,6 +4,9 @@
   .normal-text();
   line-height: 25px;
   color: #333;
+  @media (min-width: @desktop-width) {
+    align-items: center;
+  }
 }
 
 .textbox input,
@@ -29,10 +32,13 @@
   width: 279px;
   min-height: 160px;
   padding-top: 10px;
+  resize: none;
   @media (min-width: @tablet-width) {
     .container-tablet();
     width: 100%;
-    resize: none;
+  }
+  @media (min-width: @desktop-width) {
+    .container-desktop();
   }
 }
 
@@ -47,4 +53,27 @@
   line-height: 25px;
   text-align: left;
   justify-content: flex-start;
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    line-height: 58px;
+  }
+}
+
+.textbox__feedback-contacts {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 45px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    width: 45%;
+    margin-top: 30px;
+  }
 }

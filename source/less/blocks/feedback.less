@@ -81,6 +81,10 @@
     .container-tablet();
     padding: 0 60px;
   }
+  @media (min-width: @desktop-width) {
+    .container-desktop();
+    padding: 0 120px;
+  }
 }
 
 .feedback__section-contacts {
@@ -88,6 +92,10 @@
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
+  @media (min-width: @desktop-width) {
+    .container-desktop();
+    flex-direction: row;
+  }
 }
 
 .textbox--feedback-contacts {

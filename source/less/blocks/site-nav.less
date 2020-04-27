@@ -17,6 +17,9 @@
     flex-direction: row;
     flex-wrap: nowrap;
   }
+  @media (min-width: @desktop-width) {
+    .container-desktop();
+  }
 }
 
 .site-nav__link {
@@ -83,6 +86,10 @@
   text-align: center;
   width: 100%;
   position: relative;
+  @media (min-width: @desktop-width) {
+    .container-desktop();
+    width: 100%;
+  }
 }
 
 .site-nav__button {

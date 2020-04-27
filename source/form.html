@@ -57,7 +57,7 @@
         Контактная информация:
       </legend>
       <div class="feedback__section-body feedback__section-contacts">
-        <div class="textbox textbox--feedback-contacts">
+        <div class="textbox textbox__feedback-contacts">
           <label class="textbox__title textbox__title--feedback-contacts" for="phone">Контактный телефон*:</label>
           <input class="textbox__input textbox__input--phone" type="tel" name="phone" id="phone"
                  placeholder="Введите телефон" pattern="[0-9]{1}-[0-9]{3}-[0-9]{7}">
@@ -65,7 +65,7 @@
             Ошибка, перепроверьте номер
           </span>
         </div>
-        <div class="textbox textbox--feedback-contacts">
+        <div class="textbox textbox__feedback-contacts">
           <label class="textbox__title textbox__title--feedback-contacts" for="email">Электронная почта*:</label>
           <input class="textbox__input textbox__input--email" type="email" name="email" id="email"
                  placeholder="Введите e-mail" pattern="[a-zA-Z]{2,}@[a-zA-Z]{2,}.[a-zA-Z]{2,}">
@@ -142,7 +142,7 @@
     </fieldset>
     <fieldset class="feedback__section">
       <div class="feedback__section-body">
-        <button class="btn" type="submit">Отправить отзыв</button>
+        <button class="btn btn--required" type="submit">Отправить отзыв</button>
       </div>
     </fieldset>
   </form>

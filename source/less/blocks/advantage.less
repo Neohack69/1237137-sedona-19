@@ -46,6 +46,9 @@
       background-image: none;
     }
   }
+  @media (min-width: @desktop-width) {
+    .container-desktop();
+  }
 }
 
 .advantage__text {
@@ -94,10 +97,16 @@
     width: 512px;
     height: 256px;
   }
+  @media (min-width: @desktop-width) {
+    width: 800px;
+  }
 }
 
 .advantage__brief {
   @media (min-width: @tablet-width) {
     width: 256px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 400px;
   }
 }
