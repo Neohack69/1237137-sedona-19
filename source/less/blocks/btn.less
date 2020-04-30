@@ -12,7 +12,11 @@
   border: none;
   outline: none;
   cursor: pointer;
-
+  @media (min-width: @tablet-width) {
+    display: flex;
+    width: 50%;
+    align-items: center;
+  }
 }
 
 .btn--required {
