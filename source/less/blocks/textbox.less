@@ -1,14 +1,18 @@
 .textbox__title {
   display: block;
   padding-right: 20px;
-  line-height: 58px;
-  user-select: none;
   .normal-text();
+  line-height: 25px;
   color: #333;
+  @media (min-width: @desktop-width) {
+    align-items: center;
+  }
 }
 
 .textbox input,
 .textbox__input--feedback-description {
+
+  width: 100%;
   height: 58px;
   margin: 0;
   padding: 0 20px;
@@ -25,7 +29,52 @@
 }
 
 .textbox__input--feedback-description {
-  width: 100%;
+  width: 279px;
   min-height: 160px;
   padding-top: 10px;
+  resize: none;
+  @media (min-width: @tablet-width) {
+    .container-tablet();
+    width: 100%;
+  }
+  @media (min-width: @desktop-width) {
+    .container-desktop();
+  }
+}
+
+.textbox {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.textbox__title--feedback-contacts {
+  margin-bottom: 5px;
+  margin-left: 20px;
+  line-height: 25px;
+  text-align: left;
+  justify-content: flex-start;
+  white-space: nowrap;
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    line-height: 58px;
+  }
+}
+
+.textbox__feedback-contacts {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 45px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    width: 45%;
+    margin-top: 30px;
+  }
 }

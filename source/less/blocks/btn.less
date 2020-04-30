@@ -1,13 +1,39 @@
 .btn {
+  .common-text();
+  font-size: 21px;
+  align-items: center;
   display: block;
   width: 100%;
   height: 58px;
   margin: 30px auto 0;
-  padding: 0;
-  .common-text();
+  padding: 18px 0;
   color: @white;
   background-color: @blue;
   border: none;
   outline: none;
   cursor: pointer;
+  @media (min-width: @tablet-width) {
+    display: flex;
+    width: 50%;
+    align-items: center;
+  }
+}
+
+.btn--required {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    width: 50%;
+    margin: 30px 0;
+    align-items: flex-start;
+  }
+  @media (min-width: @tablet-width) {
+    &::after {
+      content: "* - обязательные поля";
+      position: absolute;
+      right: 0;
+      color: #333333;
+      font-size: 14px;
+      font-weight: normal;
+    }
+  }
 }
