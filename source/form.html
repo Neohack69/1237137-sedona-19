@@ -68,7 +68,8 @@
         <div class="textbox textbox__feedback-contacts">
           <label class="textbox__title textbox__title--feedback-contacts" for="email">Электронная почта*:</label>
           <input class="textbox__input textbox__input--email" type="email" name="email" id="email"
-                 placeholder="Введите e-mail" pattern="[a-zA-Z]{2,}@[a-zA-Z]{2,}.[a-zA-Z]{2,}">
+                 pattern="[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)"
+                 placeholder="Введите e-mail">
           <span class="textbox__warning textbox__warning--email visuallyHidden">
             Ошибка, перепроверьте адрес
           </span>
