@@ -2,7 +2,7 @@
   min-height: 350px;
   line-height: 0;
   background-color: #cbe0a3;
-  background-image: url(../img/bg-map-mobile@1x.jpg);
+  background-image: url("../img/bg-map-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 50% top;
   background-size: auto 350px;
@@ -14,13 +14,16 @@
   outline: none;
 }
 
-.map, .map__source {
+.map,
+.map__source {
   width: 100%;
   margin: 0;
   padding: 0;
+
   @media (min-width: @tablet-width) {
     .container-tablet();
   }
+
   @media (min-width: @desktop-width) {
     .container-desktop();
   }

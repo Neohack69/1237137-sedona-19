@@ -1,13 +1,14 @@
 .intro {
   min-height: 158px;
   margin: 0 auto;
-  padding-top: 52px;
+  padding-top: 49px;
   background-color: #e4f1f9;
   background-image: url("../img/bg-intro-triangle-desktop.svg"), url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 50% bottom;
   background-size: auto, auto;
   text-align: center;
+
   @media (min-width: @tablet-width) {
     background-image: url("../img/bg-intro-triangle-desktop.svg"), url("../img/bg-back-tablet@1x.jpg");
     background-size: auto, 1200px 518px;
@@ -15,6 +16,7 @@
     padding-top: 100px;
     .container-tablet();
   }
+
   @media (min-width: @desktop-width) {
     .container-desktop();
   }
@@ -23,6 +25,7 @@
 .intro__banner {
   width: 230px;
   .container-mob();
+
   @media (min-width: @tablet-width) {
     .container-tablet();
     width: 460px;
@@ -31,14 +34,20 @@
 }
 
 .intro--first-page {
-  min-height: 389px;
-  padding-top: 90px;
+  min-height: 387px;
+  padding-top: 87px;
   text-align: center;
+
   @media (min-width: @tablet-width) {
     min-height: 518px;
     padding-top: 78px;
   }
+
   @media (min-width: @desktop-width) {
     .container-desktop();
   }
+}
+
+.intro--first-page img {
+  width: 88%;
 }

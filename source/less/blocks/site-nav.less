@@ -17,6 +17,7 @@
     flex-direction: row;
     flex-wrap: nowrap;
   }
+
   @media (min-width: @desktop-width) {
     .container-desktop();
   }
@@ -29,7 +30,6 @@
   color: @white;
   height: 100%;
   width: 100%;
-
   .common-text();
 
   &:hover {
@@ -37,11 +37,12 @@
   }
 
   @media (min-width: @tablet-width) {
-    background-color: #fff;
-    color: #000;
+    background-color: #ffffff;
+    color: #000000;
     font-size: 14px;
     line-height: 26px;
     align-items: center;
+
     &:hover {
       background-color: white;
       color: @blue;
@@ -57,9 +58,11 @@
   width: 100%;
   border-top: 1px solid #9ac2db;
   border-bottom: 1px solid #678fa8;
-  min-height: 54px;
+  min-height: 56px;
+
   @media (min-width: @tablet-width) {
     border: none;
+
     &:nth-child(1) {
       order: 1;
     }
@@ -86,6 +89,7 @@
   text-align: center;
   width: 100%;
   position: relative;
+
   @media (min-width: @desktop-width) {
     .container-desktop();
     width: 100%;
@@ -99,10 +103,11 @@
   display: block;
   width: 60px;
   height: 60px;
-  background: url(../img/icon-cross.svg) no-repeat 50% 50%;
+  background: url("../img/icon-cross.svg") no-repeat 50% 50%;
   background-size: 23px 22px;
   border: none;
   outline: none;
+
   @media (min-width: @tablet-width) {
     display: none;
   }
