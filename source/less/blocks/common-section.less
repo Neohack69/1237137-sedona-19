@@ -1,10 +1,11 @@
 .common-section__header,
 .common-section__title {
   .common-text();
+  line-height: 27px;
 
   @media (min-width: @tablet-width) {
     font-weight: 700;
-    font-size: 30px;
+    font-size: 21px;
     line-height: 25px;
   }
 }
@@ -12,13 +13,13 @@
 .common-section__text,
 .common-section p {
   .normal-text();
-  line-height: 25px;
+  line-height: 23px;
   padding: 0;
   margin: 0;
 }
 
 .common-section__title {
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   line-height: 25px;
 
   @media (min-width: @tablet-width) {
@@ -37,8 +38,8 @@
 }
 
 .common-section {
-  padding-left: 21px;
-  padding-right: 21px;
+  padding-left: 20px;
+  padding-right: 20px;
   padding-top: 25px;
   padding-bottom: 6px;
   .container-mob();
@@ -46,18 +47,41 @@
 
   @media (min-width: @tablet-width) {
     .container-tablet();
-    padding: 50px 161px;
+    padding: 50px 155px;
   }
 
   @media (min-width: @desktop-width) {
     .container-desktop();
     padding: 50px 0;
   }
+
+  &__bottom {
+    padding-top: 28px;
+    padding-bottom: 6px;
+    & p {
+      margin-top: 21px;
+      margin-bottom: 36px;
+
+      @media (min-width: @tablet-width) {
+        font-size: 14px;
+        line-height: 24px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: 32px;
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  &__second-page {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
 }
 
 .common-section--divided {
   position: relative;
-  padding-bottom: 18px;
+  padding-bottom: 28px;
 
   &::after {
     content: "";
@@ -73,11 +97,55 @@
 
 .common-section__title--biggest {
   font-size: 21px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 27px;
+    font-size: 30px;
+    line-height: 26px;
+  }
 }
 
 .common-section--smaller {
   @media (max-width: @tablet-width) {
+    padding-top: 26px;
     padding-left: 28px;
     padding-right: 28px;
+    padding-bottom: 8px;
   }
+
+  @media (min-width: @tablet-width) {
+    padding-top: 37px;
+    padding-left: 139px;
+    padding-right: 139px;
+    padding-bottom: 52px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 355px;
+    padding-right: 355px;
+  }
+}
+
+.common-section__title--bigger {
+  margin-top: 7px;
+  margin-bottom: 30px;
+}
+
+.common-section--last-page {
+  padding-bottom: 19px;
+  &::after {
+      content: "";
+      position: absolute;
+      bottom: -76px;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 1px;
+      background-color: @input-iconcolor;
+
+  }
+}
+
+.common-section--last-page p {
+  line-height: 24px;
 }
