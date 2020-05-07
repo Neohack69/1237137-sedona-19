@@ -123,6 +123,28 @@
 
   @media (min-width: @desktop-width) {
     .container-desktop();
+
+    &:nth-child(3),
+    &:nth-child(4),
+    &:nth-child(5) {
+      padding-top: 16px;
+      padding-bottom: 37px;
+    }
+
+    &:nth-child(3) .advantage__text--smaller {
+      padding-left: 42px;
+      padding-right: 43px;
+    }
+
+    &:nth-child(4) .advantage__text--smaller {
+      padding-left: 61px;
+      padding-right: 63px;
+    }
+
+    &:nth-child(5) .advantage__text--smaller {
+      padding-left: 52px;
+      padding-right: 53px;
+    }
   }
 }
 
@@ -141,8 +163,8 @@
 
   @media (min-width: @desktop-width) {
     width: 400px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 70px;
+    padding-right: 67px;
     padding-top: 35px;
   }
 }
@@ -151,6 +173,11 @@
   @media (min-width: @tablet-width) {
     padding-left: 6px;
     padding-right: 6px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
@@ -214,4 +241,9 @@
 
 .advantage__header--smaller {
   margin: 0;
+
+  @media (min-width: @desktop-width) {
+    padding-left: 71px;
+    padding-right: 75px;
+  }
 }

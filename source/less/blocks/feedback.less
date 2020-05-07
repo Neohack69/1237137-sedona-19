@@ -24,7 +24,34 @@
   }
 
   @media (min-width: @tablet-width) {
-    padding: 30px 50px;
+    font-size: 21px;
+    line-height: 26px;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+
+    &--smaller {
+      padding-bottom: 60px;
+    }
+
+    &--custom {
+      text-align: center;
+      padding-top: 24px;
+      padding-bottom: 26px;
+      width: 280px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &--lefter {
+      text-align: start;
+      padding-left: 75px;
+    }
+
+    &--custom {
+      padding-bottom: 24px;
+      width: 400px;
+    }
   }
 }
 
@@ -50,24 +77,26 @@
   }
 
   @media (min-width: @tablet-width) {
-    &:nth-child(1),
-    &:nth-child(3) {
-      width: 50%;
+    &:nth-child(1) {
+      width: 266px;
       margin: 0;
       padding: 0;
+      order: 2;
     }
 
-    &:nth-child(1) {
-      order: 2;
+    &:nth-child(3) {
+      width: 324px;
+      margin: 0;
+      padding: 0;
+      order: 1;
+      border-right: 1px solid @input-iconcolor;
     }
 
     &:nth-child(2) {
       order: 3;
       border-top: 1px solid @input-iconcolor;
-    }
-
-    &:nth-child(3) {
-      order: 1;
+      margin-top: 23px;
+      padding-bottom: 0;
     }
 
     &:nth-child(4) {
@@ -84,6 +113,22 @@
       order: 6;
     }
   }
+
+  @media (min-width: @desktop-width) {
+    &:nth-child(3) {
+      width: 484px;
+      padding-left: 8px;
+    }
+
+    &:nth-child(1) {
+      width: 403px;
+      padding-right: 3px;
+    }
+
+    &:nth-child(2) {
+      margin-top: 21px;
+    }
+  }
 }
 
 .feedback {
@@ -97,11 +142,14 @@
   @media (min-width: @tablet-width) {
     .container-tablet();
     padding: 0 60px;
+    padding-top: 55px;
   }
 
   @media (min-width: @desktop-width) {
     .container-desktop();
-    padding: 0 120px;
+    padding-top: 0;
+    padding-left: 117px;
+    padding-right: 117px;
   }
 }
 
@@ -112,8 +160,19 @@
   width: 100%;
   padding-bottom: 12px;
 
+  @media (min-width: @tablet-width) {
+    padding-bottom: 0;
+  }
+
   @media (min-width: @desktop-width) {
     .container-desktop();
     flex-direction: row;
+    justify-content: normal;
+  }
+}
+
+.tel--hidden {
+  @media (min-width: @desktop-width) {
+    display: none;
   }
 }
