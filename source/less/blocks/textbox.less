@@ -28,7 +28,7 @@
   }
 }
 
-.textbox input {
+.textbox__input {
   width: 100%;
   height: 58px;
   margin: 0;
@@ -37,6 +37,9 @@
   font-size: 18px;
   line-height: 25px;
   background-color: @input-color;
+  background-repeat: no-repeat;
+  background-position: right 50%;
+  background-size: 20px 20px;
   border: none;
   outline: none;
 
@@ -105,8 +108,16 @@
 }
 
 
-.textbox__input--phonem {
+.textbox__input--phone {
+  padding-right: 75px;
+  background-image: url("../img/icon-phone.svg");
+
   @media (min-width: @desktop-width) {
     width: 317px;
   }
+}
+
+.textbox__input--email {
+  padding-right: 75px;
+  background-image: url("../img/icon-mail.svg");
 }
