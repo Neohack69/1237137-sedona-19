@@ -1,6 +1,5 @@
 .social-list__item {
-  margin-right: 6px;
-  margin-bottom: 6px;
+  margin-right: 4px;
   text-align: center;
 }
 
@@ -11,6 +10,15 @@
   padding-top: 16px;
   background-color: @blue;
   fill: white;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    fill: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .social-list {
@@ -19,5 +27,14 @@
   justify-content: center;
   margin: 0;
   padding: 0;
+  margin-bottom: 33px;
   list-style: none;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 7px;
+  }
 }

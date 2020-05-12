@@ -3,30 +3,37 @@
   font-size: 14px;
   line-height: 25px;
   justify-content: left;
+  margin: 0;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 4px;
+  }
 }
 
 .post {
   position: relative;
   padding: 23px 0;
   font-size: 14px;
+
   @media (max-width: 767px) {
     &::after {
       content: "";
       position: absolute;
       bottom: 0;
-      left: 0;
+      left: -20px;
       display: block;
-      width: 100%;
+      width: 320px;
       height: 1px;
       background-color: @grey-crossline;
     }
   }
 
-  &:first-child .post__photo {
+  &:first-child .post__photo img {
     @media (min-width: @tablet-width) {
       width: 648px;
       height: 400px;
     }
+
     @media (min-width: @desktop-width) {
       width: 1200px;
       height: 400px;
@@ -38,6 +45,7 @@
     margin: 0;
     padding: 0;
   }
+
   @media (min-width: @desktop-width) {
     .container-desktop();
   }
@@ -46,21 +54,29 @@
 .post__likes {
   display: flex;
   align-items: flex-end;
-  margin-top: 5px;
+  margin-top: 13px;
+
+  @media (min-width: @tablet-width) {
+    align-items: center;
+    width: 85px;
+    margin-top: 16px;
+  }
 }
 
 .post__likes-count {
   display: block;
   height: 14px;
-  padding-left: 10px;
+  padding-left: 14px;
   font-weight: 700;
   font-size: 14px;
   line-height: 14px;
-  color: #000;
+  color: #000000;
   text-transform: uppercase;
+
   @media (min-width: @tablet-width) {
-    margin-right: 20px;
+    padding-left: 11px;
   }
+
   @media (min-width: @desktop-width) {
     color: white;
   }
@@ -74,30 +90,30 @@
   background-size: 23px 22px;
   border: none;
   outline: none;
+
+  @media (min-width: @tablet-width) {
+
+  }
 }
 
 .post__author {
   margin: 0;
 }
 
-.post__photo {
+.post__photo img {
   display: block;
   width: 280px;
   height: 280px;
   line-height: 0;
   background-color: #aab7a5;
+
   @media (min-width: @tablet-width) {
     width: 324px;
-    height: 267px;
+    height: 266px;
   }
+
   @media (min-width: @desktop-width) {
     width: 400px;
-  }
-}
-
-.post__photo img {
-  @media (max-width: @tablet-width) {
-    height: 280px;
   }
 }
 
@@ -106,35 +122,36 @@
   flex-direction: column;
   justify-content: space-between;
   margin-top: 15px;
+
   @media (min-width: @tablet-width) {
     flex-direction: row;
     min-height: 80px;
     margin-top: 0;
     padding-bottom: 20px;
-    color: #333;
+    color: #333333;
     background-color: @input-color;
     align-items: center;
   }
+
   @media (min-width: @desktop-width) {
     position: absolute;
     bottom: 0;
     width: 100%;
-    color: #fff;
-    background-color: rgba(0, 0, 0, .5);
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.5);
+    min-height: 76px;
   }
-}
-
-.post__title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 25px;
-  text-transform: uppercase;
 }
 
 .post__description {
   @media (min-width: @tablet-width) {
     margin-top: 15px;
     margin-left: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 13px;
+    margin-left: 21px;
   }
 }
 

@@ -1,12 +1,135 @@
 .player {
   .container-mob();
+  height: 333px;
+  padding-top: 30px;
 
   @media (min-width: @tablet-width) {
     .container-tablet();
     width: 648px;
+    height: 565px;
   }
+
   @media (min-width: @desktop-width) {
     .container-desktop();
     width: 800px;
+    padding-top: 18px;
+    height: 518px;
+    margin-bottom: 93px;
+  }
+}
+
+.player__screen {
+  min-height: 201px;
+  margin: 0;
+  padding: 0;
+  background-color: #cbe0a3;
+  background-image: url("../img/video-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% top;
+  background-size: 320px 201px;
+
+  @media (min-width: @tablet-width) {
+    height: 433px;
+    background-image: url("../img/video-tablet@1x.jpg");
+    background-size: 648px 499px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 403px;
+    min-height: 500px;
+    background-image: url("../img/video-desktop@1x.jpg");
+    background-size: 800px 500px;
+  }
+}
+
+.player__controls {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  min-height: 66px;
+  margin: 0 20px;
+  background-color: #f2f2f2;
+
+  @media (min-width: @tablet-width) {
+    position: static;
+    min-height: 93px;
+    margin: -93px 0 0;
+    background-color: rgba(0,0,0,.5);
+  }
+
+  @media (min-width: @desktop-width) {
+
+  }
+}
+
+.player__button {
+  width: 70px;
+  min-height: 66px;
+  line-height: 0;
+  background: 0 0;
+  border: none;
+  outline: none;
+  fill: #5c6870;
+
+  &:nth-last-child(2) {
+    width: 40px;
+    margin-left: auto;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 90px;
+    min-height: 93px;
+    fill: white;
+  }
+}
+
+.player__progress-bar {
+  position: absolute;
+  top: -45px;
+  left: 0;
+  width: 280px;
+  min-height: 45px;
+  background-color: rgba(0,0,0,.5);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    display: block;
+    transform: translate(0,-50%);
+    right: 22px;
+    background-color: rgba(255,255,255,.3);
+    left: 22px;
+    height: 4px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    display: block;
+    transform: translate(0,-50%);
+    left: 50px;
+    width: 9px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    top: 0;
+    flex-grow: 1;
+    width: auto;
+    background: 0 0;
+
+    &:before {
+      right: 35px;
+      left: 0;
+    }
+
+    &:after {
+
+    }
   }
 }

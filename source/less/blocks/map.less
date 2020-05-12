@@ -2,7 +2,7 @@
   min-height: 350px;
   line-height: 0;
   background-color: #cbe0a3;
-  background-image: url(../img/bg-map-mobile@1x.jpg);
+  background-image: url("../img/bg-map-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 50% top;
   background-size: auto 350px;
@@ -12,16 +12,29 @@
   height: 350px;
   border: none;
   outline: none;
+
+  @media (min-width: @tablet-width) {
+    height: 404px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 417px;
+  }
 }
 
-.map, .map__source {
+.map,
+.map__source {
   width: 100%;
   margin: 0;
   padding: 0;
+
   @media (min-width: @tablet-width) {
     .container-tablet();
+    height: 358px;
   }
+
   @media (min-width: @desktop-width) {
     .container-desktop();
+    height: 350px;
   }
 }

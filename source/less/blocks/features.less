@@ -2,6 +2,8 @@
   fill: @blue;
   min-width: 37px;
   min-height: 36px;
+  margin-top: -6px;
+
   @media (min-width: @tablet-width) {
     width: 75px;
     height: 75px;
@@ -16,33 +18,47 @@
   width: 100%;
   margin: 0;
   padding: 0;
+  padding-top: 10px;
+  padding-bottom: 32px;
   list-style: none;
-  color: #333;
-  background-color: #fff;
+  color: #333333;
+  background-color: #ffffff;
+
   @media (min-width: @tablet-width) {
     .container-tablet();
     flex-direction: row;
   }
+
   @media (min-width: @desktop-width) {
     .container-desktop();
+    padding-bottom: 54px;
   }
 }
 
 .feature__title {
   .common-text();
-  line-height: 37px;
+  padding-top: 11px;
+  line-height: 10px;
   justify-content: flex-start;
+
   @media (min-width: @tablet-width) {
     justify-content: center;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+    padding-top: 25px;
   }
 }
 
 .feature__text p {
   .normal-text();
+  margin-top: 22px;
+  margin-bottom: 0;
 }
 
 .feature__text {
-  padding-left: 20px;
+  padding-left: 11px;
+
   @media (min-width: @tablet-width) {
     padding-left: 0;
   }
@@ -50,19 +66,58 @@
 
 .feature__item {
   display: flex;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-right: 41px;
-  padding-left: 22px;
+  padding: 20px 22px 6px 22px;
   .container-mob();
   line-height: 21px;
   text-align: left;
+
   @media (min-width: @tablet-width) {
     flex-direction: column;
     width: 256px;
     min-height: 256px;
-    padding: 30px 20px;
+    padding-top: 54px;
+    padding-bottom: 28px;
+    padding-left: 46px;
+    padding-right: 47px;
     text-align: center;
     align-items: center;
+
+    &:nth-child(1) {
+      order: 1;
+    }
+
+    &:nth-child(2) {
+      order: 3;
+    }
+
+    &:nth-child(3) {
+      order: 2;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 400px;
+    padding-left: 0;
+    padding-right: 0;
+
+    &:nth-child(1) {
+      padding-left: 8px;
+      padding-right: 9px;
+    }
+
+    &:nth-child(2) {
+
+    }
+
+    &:nth-child(3) {
+      padding-left: 10px;
+      padding-right: 9px;
+    }
+  }
+}
+
+.feature__description {
+  @media (min-width: @desktop-width) {
+    width: 192px;
   }
 }

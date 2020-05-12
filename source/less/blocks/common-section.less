@@ -1,61 +1,218 @@
 .common-section__header,
 .common-section__title {
   .common-text();
+  line-height: 27px;
+
   @media (min-width: @tablet-width) {
     font-weight: 700;
-    font-size: 30px;
+    font-size: 21px;
     line-height: 25px;
+  }
+}
+
+.common-section__header--second-page {
+  .common-text();
+  @media (min-width: @tablet-width) {
+    font-size: 31px;
+    margin-bottom: 16px;
   }
 }
 
 .common-section__text,
 .common-section p {
   .normal-text();
-  line-height: 25px;
+  line-height: 23px;
   padding: 0;
   margin: 0;
 }
 
 .common-section__title {
-  margin-bottom: 25px;
+  margin-bottom: 16px;
   line-height: 25px;
+
   @media (min-width: @tablet-width) {
     &--biggest {
       font-weight: 700;
       font-size: 30px;
       line-height: 25px;
-      color: #000;
+      color: #000000;
       text-transform: uppercase;
     }
+
+    &--second-page {
+      margin-bottom: 21px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 17px;
+  }
+}
+
+.common-section__title--last-page {
+  margin-bottom: 13px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 19px;
   }
 }
 
 .common-section {
-  padding: 40px 32px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 25px;
+  padding-bottom: 6px;
   .container-mob();
   text-align: center;
+
   @media (min-width: @tablet-width) {
     .container-tablet();
-    padding: 50px 161px;
+    padding: 50px 155px;
+
+    &--second-page {
+      padding-top: 41px;
+      padding-left: 176px;
+      padding-right: 177px;
+    }
   }
+
   @media (min-width: @desktop-width) {
     .container-desktop();
-    padding: 50px 0;
+  }
+
+  &__bottom {
+    padding-top: 28px;
+    padding-bottom: 6px;
+    margin-bottom: 43px;
+
+    & p {
+      margin-top: 21px;
+      margin-bottom: 36px;
+
+      @media (min-width: @tablet-width) {
+        font-size: 14px;
+        line-height: 24px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: 32px;
+        margin-bottom: 40px;
+      }
+
+      @media (min-width: @desktop-width) {
+        margin-bottom: 46px;
+      }
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-left: 371px;
+      padding-right: 371px;
+      padding-top: 10px;
+    }
+  }
+
+  &__second-page {
+    padding-left: 24px;
+    padding-right: 24px;
+
+    @media (min-width: @tablet-width) {
+      padding-left: 165px;
+      padding-right: 166px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-top: 90px;
+      padding-left: 378px;
+      padding-right: 379px;
+      padding-bottom: 72px;
+    }
+  }
+
+  &__bottom--second-page {
+    padding-top: 33px;
+    padding-left: 25px;
+    padding-right: 25px;
+
+    @media (min-width: @tablet-width) {
+      padding-left: 173px;
+      padding-right: 173px;
+    }
   }
 }
 
 .common-section--divided {
-  position: relative;
-  padding-bottom: 15px;
+  @media (max-width: @mobile-width) {
+    position: relative;
+    padding-bottom: 28px;
 
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    display: block;
-    width: 100%;
-    height: 1px;
-    background-color: @input-iconcolor;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 1px;
+      background-color: @input-iconcolor;
+    }
   }
+}
+
+.common-section__title--biggest {
+  font-size: 21px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 27px;
+    font-size: 30px;
+    line-height: 26px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 43px;
+  }
+}
+
+.common-section--smaller {
+  @media (max-width: @tablet-width) {
+    padding-top: 26px;
+    padding-left: 28px;
+    padding-right: 28px;
+    padding-bottom: 8px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-top: 37px;
+    padding-left: 139px;
+    padding-right: 139px;
+    padding-bottom: 52px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 355px;
+    padding-right: 355px;
+  }
+}
+
+.common-section__title--bigger {
+  margin-top: 0px;
+  margin-bottom: 30px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    margin-top: 23px;
+  }
+}
+
+.common-section--last-page {
+  padding-bottom: 19px;
+
+  @media (min-width: @desktop-width) {
+    padding-top: 90px;
+    padding-left: 374px;
+    padding-right: 372px;
+    padding-bottom: 57px;
+  }
+}
+
+.common-section--last-page p {
+  line-height: 24px;
 }

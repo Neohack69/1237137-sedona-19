@@ -1,17 +1,17 @@
 .textbox__title {
-  display: block;
-  padding-right: 20px;
   .normal-text();
+  padding-right: 20px;
   line-height: 25px;
-  color: #333;
+  color: #333333;
+  align-items: center;
+
   @media (min-width: @desktop-width) {
     align-items: center;
+    padding-right: 16px;
   }
 }
 
-.textbox input,
 .textbox__input--feedback-description {
-
   width: 100%;
   height: 58px;
   margin: 0;
@@ -28,15 +28,46 @@
   }
 }
 
+.textbox__input {
+  width: 100%;
+  height: 58px;
+  margin: 0;
+  padding: 0 20px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  background-color: @input-color;
+  background-repeat: no-repeat;
+  background-position: right 50%;
+  background-size: 20px 20px;
+  border: none;
+  outline: none;
+
+  &::placeholder {
+    color: @black;
+  }
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:focus {
+    background-color: white;
+    border: 4px solid #e5e5e5;
+  }
+}
+
 .textbox__input--feedback-description {
   width: 279px;
   min-height: 160px;
-  padding-top: 10px;
+  padding-top: 18px;
   resize: none;
+
   @media (min-width: @tablet-width) {
     .container-tablet();
     width: 100%;
   }
+
   @media (min-width: @desktop-width) {
     .container-desktop();
   }
@@ -45,6 +76,13 @@
 .textbox {
   display: flex;
   margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    &__bottom {
+      padding-top: 31px;
+      padding-bottom: 9px;
+    }
+  }
 }
 
 .textbox__title--feedback-contacts {
@@ -66,7 +104,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-bottom: 45px;
+  margin-bottom: 14px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 30px;
@@ -74,7 +112,21 @@
 
   @media (min-width: @desktop-width) {
     flex-direction: row;
-    width: 45%;
-    margin-top: 30px;
+    margin-top: 51px;
   }
+}
+
+
+.textbox__input--phone {
+  padding-right: 75px;
+  background-image: url("../img/icon-phone.svg");
+
+  @media (min-width: @desktop-width) {
+    width: 317px;
+  }
+}
+
+.textbox__input--email {
+  padding-right: 75px;
+  background-image: url("../img/icon-mail.svg");
 }
