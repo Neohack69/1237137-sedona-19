@@ -34,14 +34,10 @@
 
 .checkbox-set__input:checked + .checkbox-set__title::before {
   background: #f2f2f2 url("../img/icon-tick.svg") no-repeat 50% 50%;
+}
 
-  &:hover {
-    background-color: #e5e5e5;
-  }
-
-  &:active {
-    background-color: #d5d5d5;
-  }
+.checkbox-set__input:checked + .checkbox-set__title:hover::before {
+  background-color: #e6e6e6;
 }
 
 .checkbox-set__item {

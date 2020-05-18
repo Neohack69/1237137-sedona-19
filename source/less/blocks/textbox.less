@@ -1,9 +1,13 @@
 .textbox__title {
   .normal-text();
-  padding-right: 20px;
+  padding-right: 17px;
   line-height: 25px;
   color: #333333;
   align-items: center;
+
+  @media (min-width: @tablet-width) {
+    padding-right: 20px;
+  }
 
   @media (min-width: @desktop-width) {
     align-items: center;
@@ -55,6 +59,7 @@
   &:focus {
     background-color: white;
     border: 4px solid #e5e5e5;
+    padding: 0 16px;
   }
 }
 
@@ -87,6 +92,7 @@
 }
 
 .textbox__title--feedback-contacts {
+  position: relative;
   margin-bottom: 5px;
   margin-left: 20px;
   line-height: 25px;
@@ -119,19 +125,33 @@
 
 
 .textbox__input--phone {
-  position: relative;
-
   @media (min-width: @desktop-width) {
     width: 317px;
   }
-
-  &::after {
-    content: "sadasdf";
-    position: absolute;
-    border: 1px solid red;
-  }
 }
 
-.textbox__input--email {
+.text-box__input--icon {
+  &-phone {
+    position: absolute;
+    background-image: url("../img/icon-phone.svg");
+    background-color: #e6e6e6;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 57px;
+    height: 57px;
+    right: 0px;
+    top: 31px;
+  }
 
+  &-email {
+    position: absolute;
+    background-image: url("../img/icon-mail.svg");
+    background-color: #e6e6e6;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 57px;
+    height: 57px;
+    right: 0px;
+    top: 31px;
+  }
 }
