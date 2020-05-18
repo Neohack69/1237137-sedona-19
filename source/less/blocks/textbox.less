@@ -125,8 +125,26 @@
 
 
 .textbox__input--phone {
+  width: 225px;
+
+  @media (min-width: @tablet-width) {
+    width: 588px;
+  }
+
   @media (min-width: @desktop-width) {
-    width: 317px;
+    width: 260px;
+  }
+}
+
+.textbox__input--email {
+  width: 225px;
+
+  @media (min-width: @tablet-width) {
+    width: 588px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 263px;
   }
 }
 
@@ -137,10 +155,15 @@
     background-color: #e6e6e6;
     background-repeat: no-repeat;
     background-position: center;
-    width: 57px;
-    height: 57px;
+    width: 58px;
+    height: 58px;
     right: 0px;
-    top: 31px;
+    top: 30px;
+
+    @media (min-width: @desktop-width) {
+      right: 80px;
+      top: 0;
+    }
   }
 
   &-email {
@@ -149,9 +172,13 @@
     background-color: #e6e6e6;
     background-repeat: no-repeat;
     background-position: center;
-    width: 57px;
-    height: 57px;
+    width: 58px;
+    height: 58px;
     right: 0px;
-    top: 31px;
+    top: 30px;
+
+    @media (min-width: @desktop-width) {
+      top: 0;
+    }
   }
 }
