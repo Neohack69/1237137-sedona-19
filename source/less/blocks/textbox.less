@@ -6,7 +6,7 @@
   align-items: center;
 
   @media (min-width: @tablet-width) {
-    padding-right: 20px;
+    padding-right: 15px;
   }
 
   @media (min-width: @desktop-width) {
@@ -16,12 +16,16 @@
 }
 
 .textbox__input--feedback-description {
-  width: 100%;
+  width: 279px;
+  min-height: 160px;
+  padding-top: 18px;
+  padding-left: 21px;
+  padding-right: 21px;
+  resize: none;
   height: 58px;
   margin: 0;
-  padding: 0 20px;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 25px;
   background-color: @input-color;
   border: none;
@@ -29,6 +33,27 @@
 
   &::placeholder {
     color: @black;
+  }
+
+  @media (min-width: @tablet-width) {
+    .container-tablet();
+    width: 100%;
+  }
+
+  @media (min-width: @desktop-width) {
+    .container-desktop();
+  }
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:focus {
+    background-color: white;
+    border: 4px solid #e5e5e5;
+    padding-top: 14px;
+    padding-left: 17px;
+    padding-right: 17px;
   }
 }
 
@@ -48,6 +73,10 @@
   outline: none;
   position: relative;
 
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+  }
+
   &::placeholder {
     color: @black;
   }
@@ -60,22 +89,6 @@
     background-color: white;
     border: 4px solid #e5e5e5;
     padding: 0 16px;
-  }
-}
-
-.textbox__input--feedback-description {
-  width: 279px;
-  min-height: 160px;
-  padding-top: 18px;
-  resize: none;
-
-  @media (min-width: @tablet-width) {
-    .container-tablet();
-    width: 100%;
-  }
-
-  @media (min-width: @desktop-width) {
-    .container-desktop();
   }
 }
 
@@ -114,7 +127,7 @@
   margin-bottom: 14px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 30px;
+    margin-bottom: 26px;
   }
 
   @media (min-width: @desktop-width) {
@@ -157,7 +170,7 @@
     background-position: center;
     width: 58px;
     height: 58px;
-    right: 0px;
+    right: 0;
     top: 30px;
 
     @media (min-width: @desktop-width) {
@@ -174,7 +187,7 @@
     background-position: center;
     width: 58px;
     height: 58px;
-    right: 0px;
+    right: 0;
     top: 30px;
 
     @media (min-width: @desktop-width) {

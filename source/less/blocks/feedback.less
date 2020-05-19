@@ -66,16 +66,16 @@
   width: 100%;
 
   &--divided {
-      &::after {
-        content: "";
-        position: absolute;
-        bottom: -5px;
-        left: -20px;
-        display: block;
-        width: 320px;
-        height: 1px;
-        background-color: @grey-crossline;
-      }
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      left: -20px;
+      display: block;
+      width: 320px;
+      height: 1px;
+      background-color: @grey-crossline;
+    }
 
     @media (min-width: @tablet-width) {
       &::after {
@@ -103,7 +103,7 @@
       order: 3;
       border-top: 1px solid @input-iconcolor;
       margin-top: 23px;
-      padding-bottom: 0;
+      padding-bottom: 3px;
     }
 
     &:nth-child(4) {
@@ -134,6 +134,10 @@
 
     &:nth-child(2) {
       margin-top: 21px;
+    }
+
+    &:nth-child(5) {
+      margin-top: -4px;
     }
   }
 }

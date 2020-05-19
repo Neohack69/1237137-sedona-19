@@ -12,6 +12,7 @@
 
 .common-section__header--second-page {
   .common-text();
+
   @media (min-width: @tablet-width) {
     font-size: 31px;
     margin-bottom: 16px;
@@ -27,7 +28,7 @@
 }
 
 .common-section__title {
-  margin-bottom: 16px;
+  margin-bottom: 11px;
   line-height: 25px;
 
   @media (min-width: @tablet-width) {
@@ -40,20 +41,24 @@
     }
 
     &--second-page {
-      margin-bottom: 21px;
+      margin-bottom: 16px;
     }
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 17px;
+    margin-bottom: 14px;
+
+    &--second-page {
+      margin-bottom: 16px;
+    }
   }
 }
 
 .common-section__title--last-page {
-  margin-bottom: 13px;
+  margin-bottom: 10px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 19px;
+    margin-bottom: 15px;
   }
 }
 
@@ -107,6 +112,7 @@
       padding-left: 371px;
       padding-right: 371px;
       padding-top: 10px;
+      padding-bottom: 24px;
     }
   }
 
@@ -120,7 +126,7 @@
     }
 
     @media (min-width: @desktop-width) {
-      padding-top: 90px;
+      padding-top: 87px;
       padding-left: 378px;
       padding-right: 379px;
       padding-bottom: 72px;
@@ -136,13 +142,19 @@
       padding-left: 173px;
       padding-right: 173px;
     }
+
+    @media (min-width: @desktop-width) {
+      padding-left: 384px;
+      padding-right: 385px;
+      padding-bottom: 53px;
+    }
   }
 }
 
 .common-section--divided {
   @media (max-width: @mobile-width) {
     position: relative;
-    padding-bottom: 28px;
+    padding-bottom: 30px;
 
     &::after {
       content: "";
@@ -189,16 +201,18 @@
   @media (min-width: @desktop-width) {
     padding-left: 355px;
     padding-right: 355px;
+    padding-top: 33px;
   }
 }
 
 .common-section__title--bigger {
-  margin-top: 0px;
+  margin-top: 0;
   margin-bottom: 30px;
 
   @media (min-width: @tablet-width) {
     font-size: 30px;
-    margin-top: 23px;
+    margin-top: 21px;
+    margin-bottom: 33px;
   }
 }
 
@@ -206,7 +220,7 @@
   padding-bottom: 19px;
 
   @media (min-width: @desktop-width) {
-    padding-top: 90px;
+    padding-top: 87px;
     padding-left: 374px;
     padding-right: 372px;
     padding-bottom: 57px;
