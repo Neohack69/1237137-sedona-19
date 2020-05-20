@@ -24,6 +24,7 @@
   resize: none;
   height: 58px;
   margin: 0;
+  font-family: @font-family;
   font-weight: 700;
   font-size: 17px;
   line-height: 25px;
@@ -62,6 +63,7 @@
   height: 58px;
   margin: 0;
   padding: 0 20px;
+  font-family: @font-family;
   font-weight: 700;
   font-size: 18px;
   line-height: 25px;
@@ -72,6 +74,18 @@
   border: none;
   outline: none;
   position: relative;
+
+  &--firstname {
+    width: 229px;
+  }
+
+  &--surname {
+    width: 192px;
+  }
+
+  &--midname {
+    width: 197px;
+  }
 
   @media (min-width: @tablet-width) {
     font-size: 16px;
