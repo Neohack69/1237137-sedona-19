@@ -1,6 +1,6 @@
 .btn {
   .common-text();
-  font-size: 21px;
+  font-size: 18px;
   align-items: center;
   display: block;
   width: 100%;
@@ -44,13 +44,18 @@
   @media (min-width: @tablet-width) {
     align-items: center;
     margin-bottom: 60px;
+
     &::after {
       content: "* - обязательные поля";
       position: absolute;
       right: 0;
       color: #333333;
-      font-size: 14px;
+      font-size: 12px;
       font-weight: normal;
     }
   }
+}
+
+.btn--big-font {
+  font-size: 21px;
 }

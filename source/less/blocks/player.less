@@ -7,6 +7,7 @@
     .container-tablet();
     width: 648px;
     height: 565px;
+    padding-top: 23px;
   }
 
   @media (min-width: @desktop-width) {
@@ -33,7 +34,7 @@
   }
 
   @media (min-width: @tablet-width) {
-    height: 433px;
+    height: 500px;
     background-image: url("../img/video-tablet@1x.jpg");
     background-size: 648px 499px;
 
@@ -66,11 +67,7 @@
     position: static;
     min-height: 93px;
     margin: -93px 0 0;
-    background-color: rgba(0,0,0,.5);
-  }
-
-  @media (min-width: @desktop-width) {
-
+    background-color: rgba(0, 0, 0, 0.5);
   }
 }
 
@@ -82,6 +79,7 @@
   border: none;
   outline: none;
   fill: #5c6870;
+  cursor: pointer;
 
   &:nth-last-child(2) {
     width: 40px;
@@ -101,16 +99,16 @@
   left: 0;
   width: 280px;
   min-height: 45px;
-  background-color: rgba(0,0,0,.5);
+  background-color: rgba(0, 0, 0, 0.5);
 
   &::before {
     content: "";
     position: absolute;
     top: 50%;
     display: block;
-    transform: translate(0,-50%);
+    transform: translate(0, -50%);
     right: 22px;
-    background-color: rgba(255,255,255,.3);
+    background-color: rgba(255, 255, 255, 0.3);
     left: 22px;
     height: 4px;
   }
@@ -120,11 +118,11 @@
     position: absolute;
     top: 50%;
     display: block;
-    transform: translate(0,-50%);
+    transform: translate(0, -50%);
     left: 50px;
     width: 9px;
     height: 10px;
-    background-color: #fff;
+    background-color: #ffffff;
     border-radius: 50%;
   }
 
@@ -135,13 +133,9 @@
     width: auto;
     background: 0 0;
 
-    &:before {
+    &::before {
       right: 35px;
       left: 0;
-    }
-
-    &:after {
-
     }
   }
 }

@@ -87,6 +87,11 @@
 
     &:nth-child(5) {
       order: 3;
+      margin: 0 28px;
+
+      @media (min-width: @desktop-width) {
+        min-width: 187px;
+      }
     }
   }
 }
@@ -121,23 +126,31 @@
 
 .site-nav__item-logo {
   display: block;
-  height: 58px;
+  height: 56px;
   line-height: 0;
   border: none;
 
   @media (min-width: @tablet-width) {
     width: 102px;
-
   }
 
   @media (min-width: @desktop-width) {
     width: 187px;
-
   }
 }
 
 .site-nav__link--active {
   @media (min-width: @tablet-width) {
     color: #766357;
+  }
+}
+
+.site-nav__logo {
+  display: block;
+  width: 102px;
+  margin: 0 auto;
+
+  @media (min-width: @desktop-width) {
+    width: 188px;
   }
 }

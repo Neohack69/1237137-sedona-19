@@ -1,4 +1,4 @@
-.popup-window__sent {
+.sent-message {
   @media (min-width: @tablet-width) {
     position: fixed;
     z-index: 200;
@@ -11,16 +11,16 @@
     width: 640px;
     height: 347px;
     background: #ffffff;
-    box-shadow: 0 7px 15px rgba(0, 1, 1, .15);
+    box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
 
-    &--container {
+    &__container {
       padding-top: 64px;
       padding-left: 112px;
       padding-right: 114px;
       padding-bottom: 40px;
     }
 
-    &--title {
+    &__title {
       font-size: 30px;
       font-weight: bold;
       line-height: 26px;
@@ -29,13 +29,13 @@
       margin: 0;
     }
 
-    &--text {
+    &__text {
       font-size: 14px;
       line-height: 24px;
       text-transform: uppercase;
     }
 
-    &--btn {
+    &__btn {
       padding-left: 91px;
       padding-right: 91px;
       padding-top: 44px;
@@ -47,13 +47,9 @@
       margin: 0;
     }
   }
-
-  @media (min-width: @desktop-width) {
-
-  }
 }
 
-.popup-window__error {
+.error-message {
   @media (min-width: @tablet-width) {
     position: fixed;
     z-index: 200;
@@ -66,16 +62,16 @@
     width: 400px;
     height: 347px;
     background: #ffffff;
-    box-shadow: 0 7px 15px rgba(0, 1, 1, .15);
+    box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
 
-    &--container{
+    &__container {
       padding-top: 64px;
       padding-left: 61px;
       padding-right: 62px;
       padding-bottom: 39px;
     }
 
-    &--title {
+    &__title {
       font-size: 30px;
       font-weight: bold;
       line-height: 26px;
@@ -86,14 +82,14 @@
       padding-right: 25px;
     }
 
-    &--text {
+    &__text {
       font-size: 14px;
       line-height: 24px;
       text-transform: uppercase;
       padding-top: 15px;
     }
 
-    &--btn {
+    &__btn {
       padding-left: 64px;
       padding-right: 64px;
     }
