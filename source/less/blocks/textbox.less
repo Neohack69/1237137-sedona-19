@@ -15,7 +15,7 @@
   }
 }
 
-.textbox__input--feedback-description {
+.textbox__feedback-description {
   width: 279px;
   min-height: 160px;
   padding-top: 18px;
@@ -77,14 +77,26 @@
 
   &--firstname {
     width: 229px;
+
+    @media (min-width: @desktop-width) {
+      width: 100%;
+    }
   }
 
   &--surname {
     width: 192px;
+
+    @media (min-width: @desktop-width) {
+      width: 100%;
+    }
   }
 
   &--midname {
     width: 197px;
+
+    @media (min-width: @desktop-width) {
+      width: 100%;
+    }
   }
 
   @media (min-width: @tablet-width) {
@@ -175,7 +187,7 @@
   }
 }
 
-.text-box__input--icon {
+.icon {
   &-phone {
     position: absolute;
     background-image: url("../img/icon-phone.svg");

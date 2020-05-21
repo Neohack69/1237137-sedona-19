@@ -30,7 +30,7 @@
   @media (min-width: @tablet-width) {
     font-size: 21px;
     line-height: 26px;
-    margin: 0;
+  
     padding: 0;
     text-align: left;
 
@@ -47,9 +47,14 @@
   }
 
   @media (min-width: @desktop-width) {
+    &--smaller {
+      margin: 0;
+    }
+
     &--lefter {
       text-align: start;
       padding-left: 75px;
+      margin: 0;
     }
 
     &--custom {
@@ -182,7 +187,7 @@
   }
 }
 
-.tel--hidden {
+.tel-hidden {
   @media (min-width: @desktop-width) {
     display: none;
   }
