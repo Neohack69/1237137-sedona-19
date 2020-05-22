@@ -34,7 +34,8 @@
     text-align: left;
 
     &--smaller {
-      padding-bottom: 60px;
+      padding-bottom: 56px;
+      margin: 0;
     }
 
     &--custom {
@@ -42,6 +43,10 @@
       padding-top: 24px;
       padding-bottom: 26px;
       width: 400px;
+    }
+
+    &--lefter {
+      margin: 0;
     }
   }
 
@@ -174,6 +179,7 @@
   justify-content: space-between;
   width: 100%;
   padding-bottom: 12px;
+  flex-wrap: wrap;
 
   @media (min-width: @tablet-width) {
     padding-bottom: 0;
@@ -183,11 +189,5 @@
     .container-desktop();
     flex-direction: row;
     justify-content: normal;
-  }
-}
-
-.tel-hidden {
-  @media (min-width: @desktop-width) {
-    display: none;
   }
 }

@@ -39,6 +39,7 @@
   @media (min-width: @tablet-width) {
     .container-tablet();
     width: 100%;
+    font-size: 18px;
   }
 
   @media (min-width: @desktop-width) {
@@ -78,6 +79,10 @@
   &--firstname {
     width: 229px;
 
+    @media (min-width: @tablet-width) {
+      width: 216px;
+    }
+
     @media (min-width: @desktop-width) {
       width: 100%;
     }
@@ -85,6 +90,10 @@
 
   &--surname {
     width: 192px;
+
+    @media (min-width: @tablet-width) {
+      width: 177px;
+    }
 
     @media (min-width: @desktop-width) {
       width: 100%;
@@ -94,13 +103,17 @@
   &--midname {
     width: 197px;
 
+    @media (min-width: @tablet-width) {
+      width: 179px;
+    }
+
     @media (min-width: @desktop-width) {
       width: 100%;
     }
   }
 
   @media (min-width: @tablet-width) {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   &::placeholder {
@@ -123,6 +136,8 @@
   margin-bottom: 20px;
 
   @media (min-width: @tablet-width) {
+    justify-content: flex-end;
+
     &__bottom {
       padding-top: 31px;
       padding-bottom: 9px;
@@ -159,6 +174,7 @@
   @media (min-width: @desktop-width) {
     flex-direction: row;
     margin-top: 51px;
+    width: 480px;
   }
 }
 
