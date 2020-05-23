@@ -15,7 +15,6 @@
   @media (min-width: @tablet-width) {
     .container-tablet();
     flex-direction: row;
-    flex-wrap: nowrap;
   }
 
   @media (min-width: @desktop-width) {
@@ -68,11 +67,23 @@
 
   @media (min-width: @tablet-width) {
     border: none;
+    box-sizing: content-box;
+    width: 153px;
   }
 
-  &:nth-child(2) {
+  @media (min-width: @desktop-width) {
+    width: 239px;
+  }
+
+  &:nth-child(3),
+  &:nth-child(7) {
     @media (min-width: @tablet-width) {
-      margin-right: 20%;
+      margin-left: 156px;
+      margin-right: 0;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-left: 244px;
     }
   }
 }
@@ -86,23 +97,6 @@
     .container-desktop();
     width: 100%;
     display: block;
-  }
-}
-
-.site-nav__button {
-  position: absolute;
-  top: 0;
-  right: 0;
-  display: block;
-  width: 60px;
-  height: 60px;
-  background: url("../img/icon-cross.svg") no-repeat 50% 50%;
-  background-size: 23px 22px;
-  border: none;
-  outline: none;
-
-  @media (min-width: @tablet-width) {
-    display: none;
   }
 }
 
@@ -124,15 +118,5 @@
 .site-nav__link--active {
   @media (min-width: @tablet-width) {
     color: #766357;
-  }
-}
-
-.site-nav__logo {
-  display: block;
-  width: 102px;
-  margin: 0 auto;
-
-  @media (min-width: @desktop-width) {
-    width: 188px;
   }
 }

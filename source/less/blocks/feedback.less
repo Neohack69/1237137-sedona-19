@@ -53,6 +53,7 @@
   @media (min-width: @desktop-width) {
     &--smaller {
       margin: 0;
+      padding-bottom: 57px;
     }
 
     &--lefter {
@@ -62,8 +63,13 @@
     }
 
     &--custom {
+      padding-top: 27px;
       padding-bottom: 24px;
       width: 400px;
+    }
+
+    &--last {
+      padding-top: 34px;
     }
   }
 }
@@ -189,5 +195,15 @@
     .container-desktop();
     flex-direction: row;
     justify-content: normal;
+  }
+}
+
+.feedback__section-title--visited-place {
+  @media (min-width: @tablet-width) {
+    padding-top: 27px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 23px;
   }
 }

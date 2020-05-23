@@ -9,7 +9,23 @@
   }
 }
 
-.site-header,
-.site-header__wrapper {
+.site-header {
   position: relative;
+}
+
+.site-header__button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 60px;
+  height: 60px;
+  background: url("../img/icon-cross.svg") no-repeat 50% 50%;
+  background-size: 23px 22px;
+  border: none;
+  outline: none;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
