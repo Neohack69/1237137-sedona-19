@@ -44,7 +44,9 @@
   @media (min-width: @tablet-width) {
     align-items: center;
     margin-bottom: 60px;
-    font-size: 20px;
+    font-size: 19px;
+    justify-content: normal;
+    padding-left: 61px;
 
     &::after {
       content: "* - обязательные поля";
@@ -54,6 +56,11 @@
       font-size: 12px;
       font-weight: normal;
     }
+  }
+
+  @media (min-width: @desktop-width) {
+    justify-content: center;
+    padding-left: 0;
   }
 }
 
