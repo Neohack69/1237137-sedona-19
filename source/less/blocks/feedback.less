@@ -5,6 +5,7 @@
 
 .feedback__section-title {
   .common-text();
+  .container-mob();
   display: block;
   margin: 0 auto;
   padding: 23px 0;
@@ -28,6 +29,7 @@
   }
 
   @media (min-width: @tablet-width) {
+    .container-tablet();
     font-size: 21px;
     line-height: 26px;
     padding: 0;
@@ -51,6 +53,8 @@
   }
 
   @media (min-width: @desktop-width) {
+    .container-desktop();
+
     &--smaller {
       margin: 0;
       padding-bottom: 57px;
@@ -162,20 +166,18 @@
   flex-wrap: wrap;
   justify-content: space-between;
   .container-mob();
-  padding-left: 17px;
-  padding-right: 17px;
+  max-width: 285px;
 
   @media (min-width: @tablet-width) {
     .container-tablet();
-    padding: 0 60px;
     padding-top: 55px;
+    max-width: 649px;
   }
 
   @media (min-width: @desktop-width) {
     .container-desktop();
     padding-top: 0;
-    padding-left: 117px;
-    padding-right: 117px;
+    max-width: 966px;
   }
 }
 
@@ -199,6 +201,8 @@
 }
 
 .feedback__section-title--visited-place {
+  max-width: 280px;
+
   @media (min-width: @tablet-width) {
     padding-top: 27px;
   }
